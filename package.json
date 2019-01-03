@@ -1,0 +1,26 @@
+{
+  "name": "octicons-font",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf dist && mkdir dist && rm -rf _temp",
+    "copy": "cp -R node_modules/octicons/build/svg/ _temp",
+    "add": "cp -R src/icons/*.svg _temp",
+    "build": "npm run clean && npm run copy && npm run add && icon-font-generator _temp/*.svg -o dist -n octicons -p octicon --csstp src/template/styles.hbs --height 1000 --center --codepoints src/template/mapping.json --descent 180 --json false --html false --types 'svg, ttf'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/misolori/octicons-font.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/misolori/octicons-font/issues"
+  },
+  "homepage": "https://github.com/misolori/octicons-font#readme",
+  "devDependencies": {
+    "icon-font-generator": "^2.1.8",
+    "octicons": "^8.2.0"
+  }
+}
