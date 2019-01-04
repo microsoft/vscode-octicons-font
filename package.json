@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "add": "cp -R src/icons/*.svg _temp",
     "clean": "rm -rf dist && mkdir dist && rm -rf _temp",
     "copy": "cp -R node_modules/octicons/build/svg/ _temp",
-    "add": "cp -R src/icons/*.svg _temp",
-    "build": "npm run clean && npm run copy && npm run add && icon-font-generator _temp/*.svg -o dist -n octicons -p octicon --csstp src/template/styles.hbs --height 1000 --center --codepoints src/template/mapping.json --descent 180 --json false --html false --types 'svg, ttf'"
+    "remove": "rm -f _temp/logo-gist.svg && rm -f _temp/plus-small.svg",
+    "rename": "mv _temp/person.svg _temp/person-filled.svg && mv _temp/organization.svg _temp/organization-filled.svg",
+    "build": "npm run clean && npm run copy && npm run remove && npm run rename && npm run add && icon-font-generator _temp/*.svg -o dist -n octicons -p octicon --csstp src/template/styles.hbs --height 1000 --center --codepoints src/template/mapping.json --descent 180 --json false --html false --types 'svg, ttf'"
   },
   "repository": {
     "type": "git",
