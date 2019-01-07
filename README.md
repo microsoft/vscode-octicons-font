@@ -15,7 +15,7 @@ npm install
 npm run build
 ```
 
-Output will be exported to a `dist` folder.
+Output will be exported to a `dist` folder. You can alternately run `npm run dev` that will also generate a preview file.
 
 # Contributing
 
