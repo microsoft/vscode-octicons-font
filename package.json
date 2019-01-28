@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/misolori/octicons-font#readme",
   "devDependencies": {
-    "icon-font-generator": "^2.1.8",
-    "octicons": "^8.2.0"
+    "icon-font-generator": "^2.1.10",
+    "octicons": "^8.3.0"
   }
 }
