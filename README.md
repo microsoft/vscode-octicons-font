@@ -17,6 +17,14 @@ npm run build
 
 Output will be exported to a `dist` folder. You can alternately run `npm run dev` that will also generate a preview file.
 
+### Update Packages
+
+You can run `npm outdated` to see if there are any package updates. To update packages, run:
+
+```
+npm update
+```
+
 # Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
