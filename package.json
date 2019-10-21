@@ -12,14 +12,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/misolori/octicons-font.git"
+    "url": "git+https://github.com/microsoft/vscode-octicons-font.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "Microsoft Corporation"
+  },
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/misolori/octicons-font/issues"
+    "url": "https://github.com/microsoft/vscode-octicons-font/issues"
   },
-  "homepage": "https://github.com/misolori/octicons-font#readme",
+  "homepage": "https://github.com/microsoft/vscode-octicons-font#readme",
   "devDependencies": {
     "icon-font-generator": "^2.1.10"
   }
